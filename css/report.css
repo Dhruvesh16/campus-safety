@@ -1,0 +1,224 @@
+.report-card {
+    background-color: var(--white);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    max-width: 42rem;
+    margin: 0 auto;
+}
+
+.report-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.alert-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: var(--danger-color);
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--text-color);
+    margin-bottom: 0.25rem;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.375rem;
+    font-size: 1rem;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.submit-btn {
+    width: 100%;
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.submit-btn:hover {
+    background-color: var(--primary-hover);
+}
+
+.emergency-btn {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    background-color: var(--danger-color);
+    color: var(--white);
+    padding: 1rem;
+    border-radius: 9999px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s;
+}
+
+.emergency-btn:hover {
+    background-color: var(--danger-hover);
+}
+
+.emergency-btn img {
+    width: 2rem;
+    height: 2rem;
+    filter: invert(1);
+}
+
+.incident-info {
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    background: #f8f9fa;
+}
+
+.incident-info.hidden {
+    display: none;
+}
+
+.urgency-banner {
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.urgency-banner.emergency {
+    background: #ff4444;
+    color: white;
+}
+
+.urgency-banner.suspicious {
+    background: #ffbb33;
+    color: #333;
+}
+
+.urgency-banner.harassment {
+    background: #ff6b6b;
+    color: white;
+}
+
+.contacts-section, .steps-section {
+    margin: 15px 0;
+}
+
+.contact-list {
+    display: grid;
+    gap: 10px;
+}
+
+.contact-item {
+    padding: 10px;
+    background: white;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.contact-item a {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.steps-list {
+    padding-left: 20px;
+}
+
+.steps-list li {
+    margin: 10px 0;
+    line-height: 1.4;
+}
+
+.incident-info {
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.urgency-banner {
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.urgency-banner h3 {
+    margin: 0 0 8px 0;
+    font-size: 1.2rem;
+}
+
+.urgency-banner p {
+    margin: 0;
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+.response-section {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 0 0 8px 8px;
+}
+
+.contacts-panel {
+    margin-bottom: 20px;
+}
+
+.contacts-list {
+    display: grid;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.contact-card {
+    background: white;
+    padding: 12px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.phone-number {
+    color: #0066cc;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.phone-number img {
+    width: 16px;
+    height: 16px;
+}
+
+.procedures-list {
+    margin: 15px 0 0 20px;
+    padding: 0;
+}
+
+.procedures-list li {
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.hidden {
+    display: none;
+}

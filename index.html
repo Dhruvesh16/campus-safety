@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Safety</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/report.css">
+    <link rel="stylesheet" href="css/contact-card.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="https://api.iconify.design/lucide:shield.svg" alt="Shield" class="shield-icon">
+                    <h1>Campus Safety</h1>
+                </div>
+                <div class="header-actions">
+                    <button class="notification-btn">
+                        <img src="https://api.iconify.design/lucide:bell.svg" alt="Notifications">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2 class="page-title">Campus Safety Center</h2>
+        
+        <div class="report-section">
+            <div class="report-card">
+                <div class="report-header">
+                    <img src="https://api.iconify.design/lucide:alert-circle.svg" alt="Alert" class="alert-icon">
+                    <h2>Report an Incident</h2>
+                </div>
+                
+                <form id="incidentForm" class="incident-form">
+                    <div class="form-group">
+                        <label for="incidentType">Incident Type</label>
+                        <select id="incidentType" required>
+                            <option value="">Select type...</option>
+                            <option value="emergency">Medical Emergency</option>
+                            <option value="suspicious">Suspicious Activity</option>
+                            <option value="harassment">Harassment</option>
+                            <option value="other">Other Concerns</option>
+                        </select>
+                    </div>
+
+                    <div id="incidentInfo" class="incident-info hidden">
+                        <p class="urgency-level"></p>
+                        <p class="incident-description"></p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="location">Location</label>
+                        <input type="text" id="location" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="description">Description</label>
+                        <textarea id="description" rows="4" required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Submit Report</button>
+                </form>
+            </div>
+
+            <div id="contactsSection" class="contacts-section hidden">
+                <h3>Recommended Contacts</h3>
+                <div class="contacts-grid" id="contactsGrid"></div>
+            </div>
+        </div>
+    </main>
+
+    <button class="emergency-btn">
+        <img src="https://api.iconify.design/lucide:phone-call.svg" alt="Emergency Call">
+    </button>
+
+    <script src="js/incidents.js"></script>
+    <script src="js/contact-card.js"></script>
+    <script src="js/report.js"></script>
+    <script src="js/emergency.js"></script>
+</body>
+</html>
